@@ -16,7 +16,7 @@ import java.util.List;
 @Service
 public class DaoAdresseImpl implements IDaoAdresse{
     private final String requeteGetAll = "SELECT * FROM adresse";
-    private final String requeteInsert = "INSERT INTO adresse(num, rue, ville, cp, pays) VALUES (?, ?, ?, ?, ?";
+    private final String requeteInsert = "INSERT INTO adresse(num, rue, ville, cp, pays) VALUES (?, ?, ?, ?, ?)";
     private Connection connection;
     private DataSource ds;
 

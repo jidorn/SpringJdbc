@@ -8,6 +8,18 @@ public class Adresse {
     private String cp;
     private String pays;
 
+    @Override
+    public String toString() {
+        return "Adresse{" +
+                "id=" + id +
+                ", num='" + num + '\'' +
+                ", rue='" + rue + '\'' +
+                ", ville='" + ville + '\'' +
+                ", cp='" + cp + '\'' +
+                ", pays='" + pays + '\'' +
+                '}';
+    }
+
     public Integer getId() {
         return id;
     }

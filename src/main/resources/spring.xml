@@ -8,8 +8,8 @@
        http://www.springframework.org/schema/context
 	http://www.springframework.org/schema/context/spring-context.xsd">
     <context:component-scan base-package="fr.afcepf.al26.spring.service.impl"/>
-    <bean id="monDatasource" class="org.apache.commons.dbcp2.BasicDataSource">
-        <property name="url" value="jdbc:mysql://localhost:3306/hibernate"/>
+    <bean id="monDatasource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+        <property name="url" value="jdbc:mysql://localhost:3306/spring"/>
         <property name="username" value="root"/>
         <property name="password" value=""/>
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>

@@ -3,7 +3,6 @@ package fr.afcepf.al26.spring.service.impl;
 import fr.afcepf.al26.spring.entity.Adresse;
 import fr.afcepf.al26.spring.service.api.IDaoAdresse;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import javax.sql.DataSource;
 import java.sql.*;
@@ -13,7 +12,6 @@ import java.util.List;
 /**
  * Created by Stagiaire on 12/01/2016.
  */
-@Service
 public class DaoAdresseImpl implements IDaoAdresse{
     private final String requeteGetAll = "SELECT * FROM adresse";
     private final String requeteInsert = "INSERT INTO adresse(num, rue, ville, cp, pays) VALUES (?, ?, ?, ?, ?)";

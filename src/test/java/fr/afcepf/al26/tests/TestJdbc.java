@@ -21,13 +21,13 @@ public class TestJdbc {
         for (Adresse adresse:adresses){
             log.info(adresse.toString());
         }
-        /*
-        Adresse adresse = new Adresse(null,"num","rue","ville","cp","pays");
-        dao.insert(adresse);
+
+        Adresse adresse1 = new Adresse(null,"numInsert","rueInsert","villeInsert","cpInsert","paysInsert");
+        dao.insert(adresse1);
         List<Adresse> adresses1 = dao.getAll();
-        for (Adresse adresse1 : adresses1){
+        for (Adresse adresse2 : adresses1){
             log.info(adresse1.toString());
         }
-        */
+
     }
 }

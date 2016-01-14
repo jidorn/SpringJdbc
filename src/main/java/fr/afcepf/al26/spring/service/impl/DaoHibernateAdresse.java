@@ -11,10 +11,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * Created by Stagiaire on 12/01/2016.
- */
-
 public class DaoHibernateAdresse implements IDaoAdresse{
 
     private Logger log = Logger.getLogger(DaoHibernateAdresse.class);

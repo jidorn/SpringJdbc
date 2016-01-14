@@ -10,9 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-/**
- * Created by Stagiaire on 14/01/2016.
- */
 @Service
 public class DaoAdresseHibernateTransactionnal implements IDaoAdresse {
     private SessionFactory sf;

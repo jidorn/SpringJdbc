@@ -9,9 +9,6 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Stagiaire on 12/01/2016.
- */
 public class DaoAdresseImpl implements IDaoAdresse{
     private final String requeteGetAll = "SELECT * FROM adresse";
     private final String requeteInsert = "INSERT INTO adresse(num, rue, ville, cp, pays) VALUES (?, ?, ?, ?, ?)";

@@ -15,7 +15,6 @@ import java.util.List;
  * Created by Stagiaire on 12/01/2016.
  */
 
-@Service
 public class DaoHibernateAdresse implements IDaoAdresse{
 
     private Logger log = Logger.getLogger(DaoHibernateAdresse.class);
